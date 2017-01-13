@@ -1,4 +1,4 @@
-# Centos image with php-fpm
+# Centos 7 image with php-fpm
 
 ### Installed packages (based on ius repository):
  - php-cli
