@@ -27,7 +27,8 @@
  
 ### docker-compose : 
      
-    version: "2.1"
+```yaml
+    version: "2.1"
 
     services:
 
