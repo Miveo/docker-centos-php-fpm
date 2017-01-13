@@ -26,18 +26,18 @@
  - and **composer** 
  
 ### docker-compose : 
-```yaml     
-version: "2.1"
+     
+    version: "2.1"
 
-services:
+    services:
 
-    # add an apache or nginx service
+        # add an apache or nginx service
 
-    php:
-        image: miveo/centos-php-fpm
-        tty: true
-        volumes:
-            # mount your source 
-            - ../:/var/www
-            # add a shared ini configuration file specific to your project
-            - ./php/99-test-project.ini:/etc/php.d/99-test-project.ini
+        php:
+            image: miveo/centos-php-fpm
+            tty: true
+            volumes:
+                # mount your source 
+                - ../:/var/www
+                # add a shared ini configuration file specific to your project
+                - ./php/99-test-project.ini:/etc/php.d/99-test-project.ini
