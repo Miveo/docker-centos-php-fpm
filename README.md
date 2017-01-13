@@ -34,7 +34,7 @@ services:
     # add an apache or nginx service
 
     php:
-        image: miveo/centos-php-fpm
+        image: miveo/centos-php-fpm:7.1
         tty: true
         volumes:
             # mount your source 
