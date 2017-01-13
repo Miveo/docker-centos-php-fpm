@@ -4,28 +4,28 @@ MAINTAINER Julien Guyon <j.guyon@miveo.fr>
 RUN yum -y --setopt=tsflags=nodocs update && \
     yum -y --setopt=tsflags=nodocs --nogpgcheck install epel-release && \
     yum -y --setopt=tsflags=nodocs --nogpgcheck install https://centos7.iuscommunity.org/ius-release.rpm && \
-    yum -y --setopt=tsflags=nodocs --nogpgcheck install php56u-cli \
-        php56u-fpm \
-        php56u-bcmath \
-        php56u-gd \
-        php56u-intl \
-        php56u-json \
-        php56u-ldap  \
-        php56u-mbstring \
-        php56u-mcrypt \
-        php56u-opcache \
-        php56u-pdo \
-        php56u-pear  \
-        php56u-pecl-apcu \
-        php56u-pecl-imagick \
-        php56u-pecl-redis \
-        php56u-pecl-xdebug  \
-        php56u-pgsql \
-        php56u-mysqlnd \
-        php56u-soap \
-        php56u-tidy \
-        php56u-xml \
-        php56u-xmlrpc && \
+    yum -y --setopt=tsflags=nodocs --nogpgcheck install php70u-cli \
+        php70u-fpm \
+        php70u-bcmath \
+        php70u-gd \
+        php70u-intl \
+        php70u-json \
+        php70u-ldap  \
+        php70u-mbstring \
+        php70u-mcrypt \
+        php70u-opcache \
+        php70u-pdo \
+        php70u-pear  \
+        php70u-pecl-apcu \
+        php70u-pecl-imagick \
+        php70u-pecl-redis \
+        php70u-pecl-xdebug  \
+        php70u-pgsql \
+        php70u-mysqlnd \
+        php70u-soap \
+        php70u-tidy \
+        php70u-xml \
+        php70u-xmlrpc && \
         yum clean all
 
 RUN rm /etc/php-fpm.d/www.conf
