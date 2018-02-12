@@ -5,27 +5,27 @@ RUN yum -y --setopt=tsflags=nodocs update && \
     yum -y --setopt=tsflags=nodocs --nogpgcheck install epel-release && \
     yum -y --setopt=tsflags=nodocs --nogpgcheck install https://centos7.iuscommunity.org/ius-release.rpm && \
     yum -y --setopt=tsflags=nodocs --nogpgcheck install php71u-cli \
-        php71u-fpm \
-        php71u-bcmath \
-        php71u-gd \
-        php71u-intl \
-        php71u-json \
-        php71u-ldap  \
-        php71u-mbstring \
-        php71u-mcrypt \
-        php71u-opcache \
-        php71u-pdo \
-        php71u-pear  \
-        php71u-pecl-apcu \
-        php71u-pecl-imagick \
-        php71u-pecl-redis \
-        php71u-pecl-xdebug  \
-        php71u-pgsql \
-        php71u-mysqlnd \
-        php71u-soap \
-        php71u-tidy \
-        php71u-xml \
-        php71u-xmlrpc && \
+        php72u-fpm \
+        php72u-bcmath \
+        php72u-gd \
+        php72u-intl \
+        php72u-json \
+        php72u-ldap  \
+        php72u-mbstring \
+        php72u-mcrypt \
+        php72u-opcache \
+        php72u-pdo \
+        php72u-pear  \
+        php72u-pecl-apcu \
+        php72u-pecl-imagick \
+        php72u-pecl-redis \
+        php72u-pecl-xdebug  \
+        php72u-pgsql \
+        php72u-mysqlnd \
+        php72u-soap \
+        php72u-tidy \
+        php72u-xml \
+        php72u-xmlrpc && \
         yum clean all
 
 RUN rm /etc/php-fpm.d/www.conf
