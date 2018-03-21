@@ -19,7 +19,6 @@ RUN yum -y --setopt=tsflags=nodocs update && \
         php72u-pecl-apcu \
         php72u-pecl-imagick \
         php72u-pecl-redis \
-        php72u-pecl-xdebug  \
         php72u-pgsql \
         php72u-mysqlnd \
         php72u-soap \
